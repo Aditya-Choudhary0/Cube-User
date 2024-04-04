@@ -31,7 +31,7 @@ const Images = ({ userId }: { userId: number | null }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       setShouldUpdate(true);
-    }, 15000);
+    }, 10000);
     return () => clearInterval(timer);
   }, []);
 
